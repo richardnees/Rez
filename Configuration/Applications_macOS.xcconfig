@@ -1,0 +1,9 @@
+#include "Shared.xcconfig"
+
+CODE_SIGN_IDENTITY = Mac Developer
+CODE_SIGN_STYLE = Automatic
+
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+
+SUPPORTED_PLATFORMS = macosx
+

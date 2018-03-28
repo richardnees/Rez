@@ -1,0 +1,11 @@
+#include "Shared.xcconfig"
+
+SDKROOT = appletvos
+
+CODE_SIGN_IDENTITY = iPhone Developer
+CODE_SIGN_STYLE = Automatic
+
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+SUPPORTED_PLATFORMS = appletvsimulator appletvos
+TARGETED_DEVICE_FAMILY = 3
+

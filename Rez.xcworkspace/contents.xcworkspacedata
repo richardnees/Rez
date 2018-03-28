@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:Configuration"
+      name = "Configuration">
+      <FileRef
+         location = "group:Frameworks.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:External.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:XPC.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:Clang.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:Shared.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:Cocoa.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:Version.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:GCC.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:Plugins.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:Applications_iOS.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:Applications_macOS.xcconfig">
+      </FileRef>
+      <FileRef
+         location = "group:Applications_tvOS.xcconfig">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Frameworks">
+      <FileRef
+         location = "group:Frameworks/Rez/Rez.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Applications">
+      <FileRef
+         location = "group:Applications/Rez iOS/Rez iOS.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Applications/Rez macOS/Rez macOS.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Playgrounds">
+      <FileRef
+         location = "group:/Users/richard.nees/Github/Rez/Playgrounds/macOS.playground">
+      </FileRef>
+   </Group>
+</Workspace>
