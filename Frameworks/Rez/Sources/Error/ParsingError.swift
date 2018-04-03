@@ -6,7 +6,7 @@ public enum ParsingError: Error {
 }
 
 extension ParsingError: LocalizedError {
-    public var errorDescription: String {
+    public var errorDescription: String? {
         switch self {
         case .noData:
             return NSLocalizedString("No data to parse", comment: "Needs comment")

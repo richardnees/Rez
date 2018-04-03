@@ -10,9 +10,6 @@
 		1509A8FC206A9177004559EB /* Rez.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1509A8F2206A9177004559EB /* Rez.framework */; };
 		1509A901206A9177004559EB /* RezTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1509A900206A9177004559EB /* RezTests.swift */; };
 		1509A903206A9177004559EB /* Rez.h in Headers */ = {isa = PBXBuildFile; fileRef = 1509A8F5206A9177004559EB /* Rez.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1509A910206A9198004559EB /* Rez.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1509A90D206A9198004559EB /* Rez.xcconfig */; };
-		1509A911206A9198004559EB /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1509A90E206A9198004559EB /* Debug.xcconfig */; };
-		1509A912206A9198004559EB /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1509A90F206A9198004559EB /* Release.xcconfig */; };
 		1509A915206A926D004559EB /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1509A913206A926C004559EB /* Result.swift */; };
 		1509A916206A926D004559EB /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1509A914206A926D004559EB /* Resource.swift */; };
 		1509A91B206A927F004559EB /* ParsingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1509A917206A927E004559EB /* ParsingError.swift */; };
@@ -26,9 +23,6 @@
 		15D2459B206B9AC10090369F /* URLSession+ResourceLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1509A91F206A92CB004559EB /* URLSession+ResourceLoading.swift */; };
 		15D2459C206B9AC10090369F /* HTTPStatusError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1509A919206A927E004559EB /* HTTPStatusError.swift */; };
 		15D2459F206B9AC10090369F /* Rez.h in Headers */ = {isa = PBXBuildFile; fileRef = 1509A8F5206A9177004559EB /* Rez.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15D245A1206B9AC10090369F /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1509A90E206A9198004559EB /* Debug.xcconfig */; };
-		15D245A2206B9AC10090369F /* Rez.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1509A90D206A9198004559EB /* Rez.xcconfig */; };
-		15D245A3206B9AC10090369F /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1509A90F206A9198004559EB /* Release.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -239,7 +233,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Richard Nees";
 				TargetAttributes = {
 					1509A8F1206A9177004559EB = {
@@ -279,9 +273,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1509A911206A9198004559EB /* Debug.xcconfig in Resources */,
-				1509A910206A9198004559EB /* Rez.xcconfig in Resources */,
-				1509A912206A9198004559EB /* Release.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,9 +287,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15D245A1206B9AC10090369F /* Debug.xcconfig in Resources */,
-				15D245A2206B9AC10090369F /* Rez.xcconfig in Resources */,
-				15D245A3206B9AC10090369F /* Release.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
