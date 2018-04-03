@@ -1,8 +1,8 @@
 import Foundation
 import Rez
 
-extension SearchResultResourceContainer {
-    public static func lookup(_ id: String) -> Resource<SearchResultResourceContainer>? {
+extension SearchResultsContainer {
+    public static func lookup(_ id: String) -> Resource<SearchResultsContainer>? {
         
         guard var components = URLComponents(string: "https://itunes.apple.com/lookup") else { return nil }
         
@@ -12,6 +12,6 @@ extension SearchResultResourceContainer {
         
         guard let lookupURL = components.url else { return nil }
         
-        return Resource<SearchResultResourceContainer>(url: lookupURL)
+        return Resource<SearchResultsContainer>(url: lookupURL)
     }
 }

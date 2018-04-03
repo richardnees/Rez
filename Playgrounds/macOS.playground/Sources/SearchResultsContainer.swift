@@ -1,6 +1,6 @@
 import Foundation
 
-public struct SearchResultResourceContainer: Codable {
+public struct SearchResultsContainer: Codable {
     public let resultCount: Int
     public let results: [SearchResult]
 }

@@ -14,7 +14,7 @@
 		1579513B206B89D900F83988 /* SearchResultsContainer+Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1579513A206B89D900F83988 /* SearchResultsContainer+Resource.swift */; };
 		15D245A9206B9B6F0090369F /* Rez.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D24594206B9AB70090369F /* Rez.framework */; };
 		15D245AB206B9B750090369F /* Rez.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15D24594206B9AB70090369F /* Rez.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		15EF42EA206A98D40026B736 /* SearchResultResourceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EF42E8206A98D40026B736 /* SearchResultResourceContainer.swift */; };
+		15EF42EA206A98D40026B736 /* SearchResultsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EF42E8206A98D40026B736 /* SearchResultsContainer.swift */; };
 		15EF42EB206A98D40026B736 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EF42E9206A98D40026B736 /* SearchResult.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +45,7 @@
 		1547FB9C206A953F005965E8 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		1579513A206B89D900F83988 /* SearchResultsContainer+Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResultsContainer+Resource.swift"; sourceTree = "<group>"; };
 		15D24594206B9AB70090369F /* Rez.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Rez.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		15EF42E8206A98D40026B736 /* SearchResultResourceContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResultResourceContainer.swift; path = ../../../Playgrounds/macOS.playground/Sources/SearchResultResourceContainer.swift; sourceTree = "<group>"; };
+		15EF42E8206A98D40026B736 /* SearchResultsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResultsContainer.swift; path = ../../../Playgrounds/macOS.playground/Sources/SearchResultsContainer.swift; sourceTree = "<group>"; };
 		15EF42E9206A98D40026B736 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResult.swift; path = ../../../Playgrounds/macOS.playground/Sources/SearchResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,7 +85,7 @@
 				1509A92F206A9361004559EB /* AppDelegate.swift */,
 				1509A931206A9361004559EB /* ViewController.swift */,
 				15EF42E9206A98D40026B736 /* SearchResult.swift */,
-				15EF42E8206A98D40026B736 /* SearchResultResourceContainer.swift */,
+				15EF42E8206A98D40026B736 /* SearchResultsContainer.swift */,
 				1579513A206B89D900F83988 /* SearchResultsContainer+Resource.swift */,
 				1509A933206A9361004559EB /* Assets.xcassets */,
 				1509A935206A9361004559EB /* Main.storyboard */,
@@ -189,7 +189,7 @@
 				1509A930206A9361004559EB /* AppDelegate.swift in Sources */,
 				15EF42EB206A98D40026B736 /* SearchResult.swift in Sources */,
 				1579513B206B89D900F83988 /* SearchResultsContainer+Resource.swift in Sources */,
-				15EF42EA206A98D40026B736 /* SearchResultResourceContainer.swift in Sources */,
+				15EF42EA206A98D40026B736 /* SearchResultsContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

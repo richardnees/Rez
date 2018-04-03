@@ -20,7 +20,7 @@ class ViewController: UIViewController {
             return
         }
         
-        guard let resource = SearchResultResourceContainer.lookup(id) else { return }
+        guard let resource = SearchResultsContainer.lookup(id) else { return }
         
         URLSession.shared.load(resource: resource) { [weak self] result in
             DispatchQueue.main.async {

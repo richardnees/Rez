@@ -8,7 +8,7 @@ class ViewController: NSViewController {
     @IBOutlet weak var textView: NSTextView!
     
     @IBAction func lookup(_ sender: NSButton) {
-        guard let resource = SearchResultResourceContainer.lookup(idField.stringValue) else { return }
+        guard let resource = SearchResultsContainer.lookup(idField.stringValue) else { return }
         
         URLSession.shared.load(resource: resource) { [weak self] result in
             DispatchQueue.main.async {
