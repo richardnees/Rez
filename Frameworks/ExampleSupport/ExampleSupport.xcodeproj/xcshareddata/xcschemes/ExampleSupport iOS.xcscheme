@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1509A92B206A9361004559EB"
-               BuildableName = "Rez macOS.app"
-               BlueprintName = "Rez macOS"
-               ReferencedContainer = "container:Rez macOS.xcodeproj">
+               BlueprintIdentifier = "1563910D20752A79008C40DF"
+               BuildableName = "ExampleSupport.framework"
+               BlueprintName = "ExampleSupport_iOS"
+               ReferencedContainer = "container:ExampleSupport.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1509A92B206A9361004559EB"
-            BuildableName = "Rez macOS.app"
-            BlueprintName = "Rez macOS"
-            ReferencedContainer = "container:Rez macOS.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -45,23 +36,21 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      enableASanStackUseAfterReturn = "YES"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1509A92B206A9361004559EB"
-            BuildableName = "Rez macOS.app"
-            BlueprintName = "Rez macOS"
-            ReferencedContainer = "container:Rez macOS.xcodeproj">
+            BlueprintIdentifier = "1563910D20752A79008C40DF"
+            BuildableName = "ExampleSupport.framework"
+            BlueprintName = "ExampleSupport_iOS"
+            ReferencedContainer = "container:ExampleSupport.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -71,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1509A92B206A9361004559EB"
-            BuildableName = "Rez macOS.app"
-            BlueprintName = "Rez macOS"
-            ReferencedContainer = "container:Rez macOS.xcodeproj">
+            BlueprintIdentifier = "1563910D20752A79008C40DF"
+            BuildableName = "ExampleSupport.framework"
+            BlueprintName = "ExampleSupport_iOS"
+            ReferencedContainer = "container:ExampleSupport.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

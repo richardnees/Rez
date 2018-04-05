@@ -5,6 +5,7 @@ public enum HTTPStatusError: Error {
 }
 
 extension HTTPStatusError: LocalizedError {
+    
     public var errorDescription: String? {
         switch self {
         case let .httpError(code, _):
@@ -19,9 +20,11 @@ extension HTTPStatusError: LocalizedError {
             return "\(url.absoluteString) \(localizedHTTStatusCodeString)"
         }
     }
+    
 }
 
 extension HTTPStatusError: CustomNSError {
+    
     public static var errorDomain: String {
         return "Rez.HTTPStatusError"
     }
@@ -39,4 +42,5 @@ extension HTTPStatusError: CustomNSError {
             return [:]
         }
     }
+    
 }

@@ -6,6 +6,7 @@ public enum ParsingError: Error {
 }
 
 extension ParsingError: LocalizedError {
+    
     public var errorDescription: String? {
         switch self {
         case .noData:
@@ -14,6 +15,7 @@ extension ParsingError: LocalizedError {
             return NSLocalizedString("Unable to create image from data", comment: "Needs comment")
         }
     }
+    
 }
 
 extension ParsingError: CustomNSError {
@@ -39,4 +41,5 @@ extension ParsingError: CustomNSError {
             return [:]
         }
     }
+    
 }

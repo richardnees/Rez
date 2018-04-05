@@ -3,17 +3,20 @@
 import PlaygroundSupport
 import Cocoa
 import Rez
+import ExampleSupport
 
 PlaygroundPage.current.needsIndefiniteExecution = true
 
-let appURL = URL(string: "https://itunes.apple.com/lookup?id=408709785")!
-
-let resource = Resource<SearchResultsContainer>(url: appURL)
+let resource = SearchResultsContainer.search("apple")!
 
 URLSession.shared.load(resource: resource) { result in
     switch result {
     case let .success(container):
-        print(container)
+        
+        container.results.forEach { result in
+            print(result.trackName)
+        }
+        
     case let .failure(error):
         print(error)
     }

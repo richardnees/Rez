@@ -31,7 +31,9 @@ extension URLSession: ResourceLoading {
             }
             
             if let error = error {
-                completion(Result.failure(error))
+                if (error as NSError).code != NSURLErrorCancelled {
+                    completion(Result.failure(error))
+                }
                 return
             }
             
@@ -51,4 +53,5 @@ extension URLSession: ResourceLoading {
         }
         return task
     }
+    
 }

@@ -16,4 +16,5 @@ public protocol ResourceLoading {
     ///
     /// - returns: The new `URLSessionDataTaskProtocol` instance.
     func dataTask<A>(resource: Resource<A>, completion: @escaping (Result<A>) -> Void) -> URLSessionDataTask
+
 }

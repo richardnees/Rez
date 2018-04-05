@@ -16,6 +16,10 @@
 		1509A91C206A927F004559EB /* ResourceLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1509A918206A927E004559EB /* ResourceLoading.swift */; };
 		1509A91D206A927F004559EB /* HTTPStatusError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1509A919206A927E004559EB /* HTTPStatusError.swift */; };
 		1509A920206A92CB004559EB /* URLSession+ResourceLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1509A91F206A92CB004559EB /* URLSession+ResourceLoading.swift */; };
+		151DE0392074B9BC00485B8D /* Resource+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151DE0382074B9BC00485B8D /* Resource+Decodable.swift */; };
+		151DE03B2074B9E200485B8D /* Resource+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151DE03A2074B9E200485B8D /* Resource+Image.swift */; };
+		151DE03C2074BC1000485B8D /* Resource+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151DE0382074B9BC00485B8D /* Resource+Decodable.swift */; };
+		151DE03D2074BC1200485B8D /* Resource+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151DE03A2074B9E200485B8D /* Resource+Image.swift */; };
 		15D24597206B9AC10090369F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1509A913206A926C004559EB /* Result.swift */; };
 		15D24598206B9AC10090369F /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1509A914206A926D004559EB /* Resource.swift */; };
 		15D24599206B9AC10090369F /* ParsingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1509A917206A927E004559EB /* ParsingError.swift */; };
@@ -51,6 +55,8 @@
 		1509A918206A927E004559EB /* ResourceLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceLoading.swift; sourceTree = "<group>"; };
 		1509A919206A927E004559EB /* HTTPStatusError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPStatusError.swift; sourceTree = "<group>"; };
 		1509A91F206A92CB004559EB /* URLSession+ResourceLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+ResourceLoading.swift"; sourceTree = "<group>"; };
+		151DE0382074B9BC00485B8D /* Resource+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resource+Decodable.swift"; sourceTree = "<group>"; };
+		151DE03A2074B9E200485B8D /* Resource+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resource+Image.swift"; sourceTree = "<group>"; };
 		15D245A7206B9AC10090369F /* Rez.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rez.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -108,6 +114,8 @@
 				1509A921206A92D0004559EB /* Error */,
 				1509A922206A92DC004559EB /* RezProtocol */,
 				1509A914206A926D004559EB /* Resource.swift */,
+				151DE0382074B9BC00485B8D /* Resource+Decodable.swift */,
+				151DE03A2074B9E200485B8D /* Resource+Image.swift */,
 				1509A913206A926C004559EB /* Result.swift */,
 			);
 			path = Sources;
@@ -301,6 +309,8 @@
 				1509A916206A926D004559EB /* Resource.swift in Sources */,
 				1509A91B206A927F004559EB /* ParsingError.swift in Sources */,
 				1509A91C206A927F004559EB /* ResourceLoading.swift in Sources */,
+				151DE0392074B9BC00485B8D /* Resource+Decodable.swift in Sources */,
+				151DE03B2074B9E200485B8D /* Resource+Image.swift in Sources */,
 				1509A920206A92CB004559EB /* URLSession+ResourceLoading.swift in Sources */,
 				1509A91D206A927F004559EB /* HTTPStatusError.swift in Sources */,
 			);
@@ -322,6 +332,8 @@
 				15D24598206B9AC10090369F /* Resource.swift in Sources */,
 				15D24599206B9AC10090369F /* ParsingError.swift in Sources */,
 				15D2459A206B9AC10090369F /* ResourceLoading.swift in Sources */,
+				151DE03C2074BC1000485B8D /* Resource+Decodable.swift in Sources */,
+				151DE03D2074BC1200485B8D /* Resource+Image.swift in Sources */,
 				15D2459B206B9AC10090369F /* URLSession+ResourceLoading.swift in Sources */,
 				15D2459C206B9AC10090369F /* HTTPStatusError.swift in Sources */,
 			);
