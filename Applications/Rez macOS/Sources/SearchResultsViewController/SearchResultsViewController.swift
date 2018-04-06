@@ -26,9 +26,9 @@ extension SearchResultsViewController: NSTableViewDataSource {
 extension SearchResultsViewController: NSTableViewDelegate {
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        let resultsCellView = tableView.makeView(withIdentifier: ResultsCellView.identifier, owner: self) as? ResultsCellView
-        resultsCellView?.textField?.stringValue = results[row].trackName
-        return resultsCellView
+        let searchResultsCellView = tableView.makeView(withIdentifier: SearchResultsCellView.identifier, owner: self) as? SearchResultsCellView
+        searchResultsCellView?.textField?.stringValue = results[row].trackName
+        return searchResultsCellView
     }
     
     public func tableViewSelectionDidChange(_ notification: Notification) {

@@ -2,7 +2,9 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -741,13 +743,125 @@
             </objects>
             <point key="canvasLocation" x="-349" y="251"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="hIz-AP-VOD">
+            <objects>
+                <viewController id="XfG-lQ-9wD" customClass="DetailViewController" customModule="Rez_macOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="602" height="306"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EsM-MP-5Lt">
+                                <rect key="frame" x="20" y="20" width="562" height="266"/>
+                                <subviews>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="20" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DdE-iH-6Kl">
+                                        <rect key="frame" x="0.0" y="0.0" width="562" height="266"/>
+                                        <subviews>
+                                            <box autoresizesSubviews="NO" boxType="custom" borderType="line" borderWidth="0.0" cornerRadius="40" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="zPd-6I-wpC">
+                                                <rect key="frame" x="0.0" y="10" width="256" height="256"/>
+                                                <view key="contentView" id="pAv-nd-cN4">
+                                                    <rect key="frame" x="0.0" y="0.0" width="256" height="256"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vY1-C5-Pyu">
+                                                            <rect key="frame" x="0.0" y="0.0" width="256" height="256"/>
+                                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="asH-9Y-yLV"/>
+                                                        </imageView>
+                                                        <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="cv9-u0-bmo">
+                                                            <rect key="frame" x="112" y="112" width="32" height="32"/>
+                                                        </progressIndicator>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="cv9-u0-bmo" firstAttribute="centerY" secondItem="pAv-nd-cN4" secondAttribute="centerY" id="9SJ-5v-69e"/>
+                                                        <constraint firstAttribute="bottom" secondItem="vY1-C5-Pyu" secondAttribute="bottom" id="F1F-Cn-PBz"/>
+                                                        <constraint firstItem="cv9-u0-bmo" firstAttribute="centerX" secondItem="pAv-nd-cN4" secondAttribute="centerX" id="OUe-F6-erU"/>
+                                                        <constraint firstItem="vY1-C5-Pyu" firstAttribute="top" secondItem="pAv-nd-cN4" secondAttribute="top" id="dab-e2-UPu"/>
+                                                        <constraint firstItem="vY1-C5-Pyu" firstAttribute="leading" secondItem="pAv-nd-cN4" secondAttribute="leading" id="x9n-Ci-mf1"/>
+                                                        <constraint firstAttribute="trailing" secondItem="vY1-C5-Pyu" secondAttribute="trailing" id="zZW-SG-khN"/>
+                                                    </constraints>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="256" id="G0R-Fx-ZkZ"/>
+                                                    <constraint firstAttribute="height" constant="256" id="UZc-Nh-xnd"/>
+                                                </constraints>
+                                            </box>
+                                            <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7G0-u5-9TI">
+                                                <rect key="frame" x="276" y="220" width="286" height="46"/>
+                                                <subviews>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="JLs-Li-uCl">
+                                                        <rect key="frame" x="-2" y="25" width="52" height="21"/>
+                                                        <textFieldCell key="cell" lineBreakMode="truncatingTail" truncatesLastVisibleLine="YES" sendsActionOnEndEditing="YES" placeholderString="Name" id="YCF-q9-DEu">
+                                                            <font key="font" metaFont="systemBold" size="17"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Lto-g7-xbB">
+                                                        <rect key="frame" x="-2" y="0.0" width="62" height="17"/>
+                                                        <textFieldCell key="cell" lineBreakMode="truncatingTail" truncatesLastVisibleLine="YES" sendsActionOnEndEditing="YES" placeholderString="Company" id="XiX-GL-WPX">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                </subviews>
+                                                <visibilityPriorities>
+                                                    <integer value="1000"/>
+                                                    <integer value="1000"/>
+                                                </visibilityPriorities>
+                                                <customSpacing>
+                                                    <real value="3.4028234663852886e+38"/>
+                                                    <real value="3.4028234663852886e+38"/>
+                                                </customSpacing>
+                                            </stackView>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="DdE-iH-6Kl" firstAttribute="leading" secondItem="EsM-MP-5Lt" secondAttribute="leading" id="HHZ-Bi-JNQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="DdE-iH-6Kl" secondAttribute="trailing" id="IZH-RK-nxL"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="EsM-MP-5Lt" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="GPd-AC-jd8"/>
+                            <constraint firstAttribute="bottom" secondItem="EsM-MP-5Lt" secondAttribute="bottom" constant="20" id="OEO-pv-44r"/>
+                            <constraint firstAttribute="trailing" secondItem="EsM-MP-5Lt" secondAttribute="trailing" constant="20" id="TWt-ZR-yAb"/>
+                            <constraint firstItem="EsM-MP-5Lt" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="XHD-Tc-9lH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="companyField" destination="Lto-g7-xbB" id="YHA-qG-mnw"/>
+                        <outlet property="imageLoadingIndicator" destination="cv9-u0-bmo" id="LuJ-fX-jth"/>
+                        <outlet property="imageView" destination="vY1-C5-Pyu" id="GAc-Fo-DFW"/>
+                        <outlet property="nameField" destination="JLs-Li-uCl" id="FQm-Ba-T1H"/>
+                    </connections>
+                </viewController>
+                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1263" y="467"/>
+        </scene>
         <!--Split View Controller-->
         <scene sceneID="w99-Po-l8D">
             <objects>
                 <splitViewController id="PNc-xM-ZK1" sceneMemberID="viewController">
                     <splitViewItems>
                         <splitViewItem id="mKN-q4-5hc"/>
-                        <splitViewItem id="Yoo-mx-Oy7"/>
+                        <splitViewItem id="r05-Jk-YfL"/>
                     </splitViewItems>
                     <splitView key="splitView" dividerStyle="thin" vertical="YES" id="kUb-nN-p71">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
@@ -759,7 +873,7 @@
                     <connections>
                         <outlet property="splitView" destination="kUb-nN-p71" id="FRx-Yb-idT"/>
                         <segue destination="cfq-Dc-8OV" kind="relationship" relationship="splitItems" id="uFs-B6-V7z"/>
-                        <segue destination="iIf-n7-Ayu" kind="relationship" relationship="splitItems" id="yiq-RG-At4"/>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="splitItems" id="yiq-RG-At4"/>
                     </connections>
                 </splitViewController>
                 <customObject id="lFI-6K-ppe" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -773,14 +887,6 @@
                 <customObject id="B3p-IN-YWV" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1187" y="47"/>
-        </scene>
-        <!--DetailViewController-->
-        <scene sceneID="UU4-07-7Sn">
-            <objects>
-                <controllerPlaceholder storyboardName="DetailViewController" id="iIf-n7-Ayu" sceneMemberID="viewController"/>
-                <customObject id="vbS-sj-uak" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1263" y="467"/>
         </scene>
     </scenes>
 </document>

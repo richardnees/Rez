@@ -67,4 +67,10 @@ class SearchResultsViewController: UITableViewController {
     
 }
 
+extension SearchResultsViewController {
+    static func makeViewController() -> SearchResultsViewController? {
+        return UIStoryboard(name: "SearchResultsViewController", bundle: nil).instantiateInitialViewController() as? SearchResultsViewController
+    }
+}
+
 

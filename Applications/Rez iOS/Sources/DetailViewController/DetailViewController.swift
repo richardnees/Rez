@@ -68,7 +68,7 @@ class DetailViewController: UIViewController {
     // MARK: - Search (Results) Controller
     
     lazy var searchResultsController: SearchResultsViewController = {
-        guard let searchResultsController = storyboard?.instantiateViewController(withIdentifier: "SearchResultsViewController") as? SearchResultsViewController else {
+        guard let searchResultsController = SearchResultsViewController.makeViewController() else {
             fatalError("We need a SearchResultsViewController")
         }
         searchResultsController.delegate = self
