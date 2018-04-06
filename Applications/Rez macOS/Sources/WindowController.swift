@@ -1,5 +1,5 @@
 import Cocoa
-import ExampleSupport
+import RezExampleSupport
 import Rez
 
 public protocol SearchResultsSelectionDelegate: class {

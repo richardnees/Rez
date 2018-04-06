@@ -1,5 +1,5 @@
 import Cocoa
-import ExampleSupport
+import RezExampleSupport
 
 class SearchResultsViewController: NSViewController {
 

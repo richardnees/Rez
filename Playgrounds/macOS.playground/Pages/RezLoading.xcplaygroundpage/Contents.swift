@@ -3,7 +3,7 @@
 import PlaygroundSupport
 import Cocoa
 import Rez
-import ExampleSupport
+import RezExampleSupport
 
 PlaygroundPage.current.needsIndefiniteExecution = true
 

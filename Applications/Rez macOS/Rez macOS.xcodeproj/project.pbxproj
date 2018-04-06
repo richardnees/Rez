@@ -13,11 +13,11 @@
 		1509A937206A9361004559EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1509A935206A9361004559EB /* Main.storyboard */; };
 		15314D472077791E00DCB75A /* SearchResultsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15314D462077791E00DCB75A /* SearchResultsViewController.storyboard */; };
 		15314D4A2077794100DCB75A /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15314D492077794100DCB75A /* DetailViewController.storyboard */; };
+		15314D5120777A4F00DCB75A /* RezExampleSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15314D5020777A4F00DCB75A /* RezExampleSupport.framework */; };
+		15314D5320777A5300DCB75A /* RezExampleSupport.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15314D5020777A4F00DCB75A /* RezExampleSupport.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1563903220750491008C40DF /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1563903120750491008C40DF /* WindowController.swift */; };
 		15639034207505E2008C40DF /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15639033207505E2008C40DF /* SearchResultsViewController.swift */; };
 		1563903620750CA1008C40DF /* SearchResultsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1563903520750CA1008C40DF /* SearchResultsCellView.swift */; };
-		1563912320752B19008C40DF /* ExampleSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1563912220752B19008C40DF /* ExampleSupport.framework */; };
-		1563912520752B1C008C40DF /* ExampleSupport.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1563912220752B19008C40DF /* ExampleSupport.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		15D245A9206B9B6F0090369F /* Rez.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D24594206B9AB70090369F /* Rez.framework */; };
 		15D245AB206B9B750090369F /* Rez.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15D24594206B9AB70090369F /* Rez.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -30,7 +30,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				15D245AB206B9B750090369F /* Rez.framework in Embed Frameworks */,
-				1563912520752B1C008C40DF /* ExampleSupport.framework in Embed Frameworks */,
+				15314D5320777A5300DCB75A /* RezExampleSupport.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,13 +47,13 @@
 		1509A939206A9361004559EB /* Rez_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Rez_Example.entitlements; sourceTree = "<group>"; };
 		15314D462077791E00DCB75A /* SearchResultsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchResultsViewController.storyboard; sourceTree = "<group>"; };
 		15314D492077794100DCB75A /* DetailViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailViewController.storyboard; sourceTree = "<group>"; };
+		15314D5020777A4F00DCB75A /* RezExampleSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RezExampleSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1547FB9A206A953F005965E8 /* Rez macOS.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Rez macOS.xcconfig"; sourceTree = "<group>"; };
 		1547FB9B206A953F005965E8 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		1547FB9C206A953F005965E8 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		1563903120750491008C40DF /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		15639033207505E2008C40DF /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		1563903520750CA1008C40DF /* SearchResultsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsCellView.swift; sourceTree = "<group>"; };
-		1563912220752B19008C40DF /* ExampleSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ExampleSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D24594206B9AB70090369F /* Rez.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Rez.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1563912320752B19008C40DF /* ExampleSupport.framework in Frameworks */,
+				15314D5120777A4F00DCB75A /* RezExampleSupport.framework in Frameworks */,
 				15D245A9206B9B6F0090369F /* Rez.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,7 +135,7 @@
 		1547FBA0206A95DB005965E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1563912220752B19008C40DF /* ExampleSupport.framework */,
+				15314D5020777A4F00DCB75A /* RezExampleSupport.framework */,
 				15D24594206B9AB70090369F /* Rez.framework */,
 			);
 			name = Frameworks;

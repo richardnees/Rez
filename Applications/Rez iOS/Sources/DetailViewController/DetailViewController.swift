@@ -1,6 +1,6 @@
 import UIKit
 import Rez
-import ExampleSupport
+import RezExampleSupport
 
 class DetailViewController: UIViewController {
 

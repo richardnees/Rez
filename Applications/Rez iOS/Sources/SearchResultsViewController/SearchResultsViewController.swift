@@ -1,6 +1,6 @@
 import UIKit
 import Rez
-import ExampleSupport
+import RezExampleSupport
 
 protocol SearchResultsViewControllerDelegate: class {
     func searchResultsViewController(_ searchResultsViewController: SearchResultsViewController, selected item: SearchResult)

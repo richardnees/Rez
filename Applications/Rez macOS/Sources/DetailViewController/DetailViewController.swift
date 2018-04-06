@@ -1,6 +1,6 @@
 import Cocoa
 import Rez
-import ExampleSupport
+import RezExampleSupport
 
 class DetailViewController: NSViewController {
     

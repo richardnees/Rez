@@ -20,16 +20,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		151DE0482074C2A000485B8D /* ExampleSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExampleSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		151DE0482074C2A000485B8D /* RezExampleSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RezExampleSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		151DE04B2074C2A000485B8D /* ExampleSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleSupport.h; sourceTree = "<group>"; };
 		151DE04C2074C2A000485B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		151DE0542074C2B100485B8D /* ExampleSupport.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ExampleSupport.xcconfig; sourceTree = "<group>"; };
+		151DE0542074C2B100485B8D /* RezExampleSupport.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = RezExampleSupport.xcconfig; sourceTree = "<group>"; };
 		151DE0552074C2B100485B8D /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		151DE0562074C2B100485B8D /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		151DE05A2074C30C00485B8D /* SearchResultsContainer+Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SearchResultsContainer+Resource.swift"; sourceTree = "<group>"; };
 		151DE05B2074C30D00485B8D /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		151DE05C2074C30D00485B8D /* SearchResultsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsContainer.swift; sourceTree = "<group>"; };
-		1563911920752A79008C40DF /* ExampleSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExampleSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1563911920752A79008C40DF /* RezExampleSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RezExampleSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1563911C20752ACA008C40DF /* Rez.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Rez.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1563911E20752AD0008C40DF /* Rez.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Rez.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -67,8 +67,8 @@
 		151DE0492074C2A000485B8D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				151DE0482074C2A000485B8D /* ExampleSupport.framework */,
-				1563911920752A79008C40DF /* ExampleSupport.framework */,
+				151DE0482074C2A000485B8D /* RezExampleSupport.framework */,
+				1563911920752A79008C40DF /* RezExampleSupport.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,7 +88,7 @@
 		151DE0532074C2B100485B8D /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				151DE0542074C2B100485B8D /* ExampleSupport.xcconfig */,
+				151DE0542074C2B100485B8D /* RezExampleSupport.xcconfig */,
 				151DE0552074C2B100485B8D /* Debug.xcconfig */,
 				151DE0562074C2B100485B8D /* Release.xcconfig */,
 			);
@@ -126,9 +126,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		151DE0472074C2A000485B8D /* ExampleSupport_macOS */ = {
+		151DE0472074C2A000485B8D /* RezExampleSupport_macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 151DE0502074C2A000485B8D /* Build configuration list for PBXNativeTarget "ExampleSupport_macOS" */;
+			buildConfigurationList = 151DE0502074C2A000485B8D /* Build configuration list for PBXNativeTarget "RezExampleSupport_macOS" */;
 			buildPhases = (
 				151DE0432074C2A000485B8D /* Sources */,
 				151DE0442074C2A000485B8D /* Frameworks */,
@@ -139,14 +139,14 @@
 			);
 			dependencies = (
 			);
-			name = ExampleSupport_macOS;
+			name = RezExampleSupport_macOS;
 			productName = ExampleSupport;
-			productReference = 151DE0482074C2A000485B8D /* ExampleSupport.framework */;
+			productReference = 151DE0482074C2A000485B8D /* RezExampleSupport.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		1563910D20752A79008C40DF /* ExampleSupport_iOS */ = {
+		1563910D20752A79008C40DF /* RezExampleSupport_iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1563911620752A79008C40DF /* Build configuration list for PBXNativeTarget "ExampleSupport_iOS" */;
+			buildConfigurationList = 1563911620752A79008C40DF /* Build configuration list for PBXNativeTarget "RezExampleSupport_iOS" */;
 			buildPhases = (
 				1563910E20752A79008C40DF /* Sources */,
 				1563911220752A79008C40DF /* Frameworks */,
@@ -157,9 +157,9 @@
 			);
 			dependencies = (
 			);
-			name = ExampleSupport_iOS;
+			name = RezExampleSupport_iOS;
 			productName = ExampleSupport;
-			productReference = 1563911920752A79008C40DF /* ExampleSupport.framework */;
+			productReference = 1563911920752A79008C40DF /* RezExampleSupport.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -176,7 +176,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 151DE0422074C2A000485B8D /* Build configuration list for PBXProject "ExampleSupport" */;
+			buildConfigurationList = 151DE0422074C2A000485B8D /* Build configuration list for PBXProject "RezExampleSupport" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -188,8 +188,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				151DE0472074C2A000485B8D /* ExampleSupport_macOS */,
-				1563910D20752A79008C40DF /* ExampleSupport_iOS */,
+				151DE0472074C2A000485B8D /* RezExampleSupport_macOS */,
+				1563910D20752A79008C40DF /* RezExampleSupport_iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -251,30 +251,34 @@
 		};
 		151DE0512074C2A000485B8D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 151DE0542074C2B100485B8D /* ExampleSupport.xcconfig */;
+			baseConfigurationReference = 151DE0542074C2B100485B8D /* RezExampleSupport.xcconfig */;
 			buildSettings = {
+				PRODUCT_NAME = RezExampleSupport;
 			};
 			name = Debug;
 		};
 		151DE0522074C2A000485B8D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 151DE0542074C2B100485B8D /* ExampleSupport.xcconfig */;
+			baseConfigurationReference = 151DE0542074C2B100485B8D /* RezExampleSupport.xcconfig */;
 			buildSettings = {
+				PRODUCT_NAME = RezExampleSupport;
 			};
 			name = Release;
 		};
 		1563911720752A79008C40DF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 151DE0542074C2B100485B8D /* ExampleSupport.xcconfig */;
+			baseConfigurationReference = 151DE0542074C2B100485B8D /* RezExampleSupport.xcconfig */;
 			buildSettings = {
+				PRODUCT_NAME = RezExampleSupport;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
 		1563911820752A79008C40DF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 151DE0542074C2B100485B8D /* ExampleSupport.xcconfig */;
+			baseConfigurationReference = 151DE0542074C2B100485B8D /* RezExampleSupport.xcconfig */;
 			buildSettings = {
+				PRODUCT_NAME = RezExampleSupport;
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -282,7 +286,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		151DE0422074C2A000485B8D /* Build configuration list for PBXProject "ExampleSupport" */ = {
+		151DE0422074C2A000485B8D /* Build configuration list for PBXProject "RezExampleSupport" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				151DE04E2074C2A000485B8D /* Debug */,
@@ -291,7 +295,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		151DE0502074C2A000485B8D /* Build configuration list for PBXNativeTarget "ExampleSupport_macOS" */ = {
+		151DE0502074C2A000485B8D /* Build configuration list for PBXNativeTarget "RezExampleSupport_macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				151DE0512074C2A000485B8D /* Debug */,
@@ -300,7 +304,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1563911620752A79008C40DF /* Build configuration list for PBXNativeTarget "ExampleSupport_iOS" */ = {
+		1563911620752A79008C40DF /* Build configuration list for PBXNativeTarget "RezExampleSupport_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1563911720752A79008C40DF /* Debug */,

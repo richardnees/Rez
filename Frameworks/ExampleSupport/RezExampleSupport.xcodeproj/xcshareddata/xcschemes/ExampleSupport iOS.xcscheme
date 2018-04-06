@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1563910D20752A79008C40DF"
                BuildableName = "ExampleSupport.framework"
-               BlueprintName = "ExampleSupport_iOS"
-               ReferencedContainer = "container:ExampleSupport.xcodeproj">
+               BlueprintName = "RezExampleSupport_iOS"
+               ReferencedContainer = "container:RezExampleSupport.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,8 +47,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1563910D20752A79008C40DF"
             BuildableName = "ExampleSupport.framework"
-            BlueprintName = "ExampleSupport_iOS"
-            ReferencedContainer = "container:ExampleSupport.xcodeproj">
+            BlueprintName = "RezExampleSupport_iOS"
+            ReferencedContainer = "container:RezExampleSupport.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,8 +65,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1563910D20752A79008C40DF"
             BuildableName = "ExampleSupport.framework"
-            BlueprintName = "ExampleSupport_iOS"
-            ReferencedContainer = "container:ExampleSupport.xcodeproj">
+            BlueprintName = "RezExampleSupport_iOS"
+            ReferencedContainer = "container:RezExampleSupport.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

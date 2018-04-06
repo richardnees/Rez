@@ -45,7 +45,7 @@
       location = "container:"
       name = "Frameworks">
       <FileRef
-         location = "group:Frameworks/ExampleSupport/ExampleSupport.xcodeproj">
+         location = "group:/Users/richard.nees/Github/Rez/Frameworks/ExampleSupport/RezExampleSupport.xcodeproj">
       </FileRef>
       <FileRef
          location = "group:Frameworks/Rez/Rez.xcodeproj">
