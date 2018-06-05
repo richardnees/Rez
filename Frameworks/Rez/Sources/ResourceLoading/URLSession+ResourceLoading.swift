@@ -21,7 +21,12 @@ extension URLSession: ResourceLoading {
         var request = URLRequest(url: resource.url)
         request.allHTTPHeaderFields = resource.allHTTPHeaderFields
 
-        let task = dataTask(with: request) { data, response, error in
+        let completionHandler = dataTaskCompletionHandler(for: resource, completion: completion)
+        return dataTask(with: request, completionHandler: completionHandler)
+    }
+    
+    public func dataTaskCompletionHandler<A>(for resource: Resource<A>, completion: @escaping (Result<A>) -> Void) -> (Data?, URLResponse?, Error?) -> Void {
+        return { (data, response, error) in
             
             if
                 let response = response as? HTTPURLResponse,
@@ -51,7 +56,5 @@ extension URLSession: ResourceLoading {
                 break
             }
         }
-        return task
     }
-    
 }

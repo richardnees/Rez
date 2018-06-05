@@ -65,7 +65,7 @@
       location = "container:"
       name = "Playgrounds">
       <FileRef
-         location = "group:/Users/richard.nees/Github/Rez/Playgrounds/macOS.playground">
+         location = "group:Playgrounds/macOS.playground">
       </FileRef>
    </Group>
 </Workspace>
