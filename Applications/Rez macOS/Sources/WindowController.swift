@@ -22,9 +22,17 @@ class WindowController: NSWindowController {
     override func windowDidLoad() {
         super.windowDidLoad()
     
+        NotificationCenter.default.addObserver(forName: UserDefaults.didChangeNotification, object: nil, queue: nil) { [weak self] notification in
+            let isAppearanceDark = UserDefaults.standard.bool(forKey: "DarkAppearance")
+            self?.window?.appearance = isAppearanceDark
+                ? NSAppearance(named: .vibrantDark)
+                : NSAppearance(named: .vibrantLight)
+            
+            self?.window?.viewsNeedDisplay = true
+        }
+        
         guard let window = window else { return }
         
-        window.appearance = NSAppearance(named: .vibrantDark)
         window.isMovableByWindowBackground = true
         window.titleVisibility = .hidden
     

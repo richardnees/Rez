@@ -41,7 +41,7 @@
 		15314D4C20777A3B00DCB75A /* RezExampleSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RezExampleSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1563912C20752BEF008C40DF /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		156B171B2076678B006CE915 /* SearchResultsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchResultsViewController.storyboard; sourceTree = "<group>"; };
-		15D24577206B99340090369F /* Rez iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rez iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15D24577206B99340090369F /* Rez Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rez Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D2457A206B99340090369F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15D2457C206B99340090369F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		15D2457F206B99340090369F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 		15D24578206B99340090369F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				15D24577206B99340090369F /* Rez iOS.app */,
+				15D24577206B99340090369F /* Rez Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,7 +154,7 @@
 			);
 			name = "Rez iOS";
 			productName = "Rez iOS";
-			productReference = 15D24577206B99340090369F /* Rez iOS.app */;
+			productReference = 15D24577206B99340090369F /* Rez Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */

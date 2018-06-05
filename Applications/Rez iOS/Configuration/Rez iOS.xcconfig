@@ -1,2 +1,2 @@
 PRODUCT_BUNDLE_IDENTIFIER = com.richardnees.ios.Rez
-PRODUCT_NAME = $(TARGET_NAME)
+PRODUCT_NAME = Rez Example

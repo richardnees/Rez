@@ -15,6 +15,7 @@
 		15314D4A2077794100DCB75A /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15314D492077794100DCB75A /* DetailViewController.storyboard */; };
 		15314D5120777A4F00DCB75A /* RezExampleSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15314D5020777A4F00DCB75A /* RezExampleSupport.framework */; };
 		15314D5320777A5300DCB75A /* RezExampleSupport.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15314D5020777A4F00DCB75A /* RezExampleSupport.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		15314D552077ADFB00DCB75A /* FlippedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15314D542077ADFB00DCB75A /* FlippedView.swift */; };
 		1563903220750491008C40DF /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1563903120750491008C40DF /* WindowController.swift */; };
 		15639034207505E2008C40DF /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15639033207505E2008C40DF /* SearchResultsViewController.swift */; };
 		1563903620750CA1008C40DF /* SearchResultsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1563903520750CA1008C40DF /* SearchResultsCellView.swift */; };
@@ -38,7 +39,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1509A92C206A9361004559EB /* Rez macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rez macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1509A92C206A9361004559EB /* Rez Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rez Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1509A92F206A9361004559EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1509A931206A9361004559EB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		1509A933206A9361004559EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,6 +49,7 @@
 		15314D462077791E00DCB75A /* SearchResultsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchResultsViewController.storyboard; sourceTree = "<group>"; };
 		15314D492077794100DCB75A /* DetailViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailViewController.storyboard; sourceTree = "<group>"; };
 		15314D5020777A4F00DCB75A /* RezExampleSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RezExampleSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15314D542077ADFB00DCB75A /* FlippedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlippedView.swift; sourceTree = "<group>"; };
 		1547FB9A206A953F005965E8 /* Rez macOS.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Rez macOS.xcconfig"; sourceTree = "<group>"; };
 		1547FB9B206A953F005965E8 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		1547FB9C206A953F005965E8 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
@@ -83,7 +85,7 @@
 		1509A92D206A9361004559EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1509A92C206A9361004559EB /* Rez macOS.app */,
+				1509A92C206A9361004559EB /* Rez Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +96,7 @@
 				1509A935206A9361004559EB /* Main.storyboard */,
 				1509A92F206A9361004559EB /* AppDelegate.swift */,
 				1563903120750491008C40DF /* WindowController.swift */,
+				15314D542077ADFB00DCB75A /* FlippedView.swift */,
 				15314D4B2077794A00DCB75A /* DetailViewController */,
 				15314D482077792B00DCB75A /* SearchResultsViewController */,
 				1509A933206A9361004559EB /* Assets.xcassets */,
@@ -159,7 +162,7 @@
 			);
 			name = "Rez macOS";
 			productName = "Rez Example";
-			productReference = 1509A92C206A9361004559EB /* Rez macOS.app */;
+			productReference = 1509A92C206A9361004559EB /* Rez Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -218,6 +221,7 @@
 				1509A932206A9361004559EB /* DetailViewController.swift in Sources */,
 				1563903620750CA1008C40DF /* SearchResultsCellView.swift in Sources */,
 				1563903220750491008C40DF /* WindowController.swift in Sources */,
+				15314D552077ADFB00DCB75A /* FlippedView.swift in Sources */,
 				1509A930206A9361004559EB /* AppDelegate.swift in Sources */,
 				15639034207505E2008C40DF /* SearchResultsViewController.swift in Sources */,
 			);
@@ -259,7 +263,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L67SAKHR8M;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "Rez macOS";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
@@ -272,7 +275,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L67SAKHR8M;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "Rez macOS";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;

@@ -8,7 +8,16 @@ class DetailViewController: NSViewController {
     @IBOutlet weak var imageLoadingIndicator: NSProgressIndicator!
     @IBOutlet weak var nameField: NSTextField!
     @IBOutlet weak var companyField: NSTextField!
+    @IBOutlet weak var priceTextField: NSTextField!
+    @IBOutlet weak var priceFormatter: NumberFormatter!
+    @IBOutlet weak var categoryTextField: NSTextField!
+    @IBOutlet weak var updateTextField: NSTextField!
+    @IBOutlet weak var versionTextField: NSTextField!
+    @IBOutlet weak var sizeTextField: NSTextField!
+    @IBOutlet weak var languagesTextField: NSTextField!
 
+    @IBOutlet weak var descriptionField: NSTextField!
+    
     var task: URLSessionDataTask?
 
     var result: SearchResult? {
@@ -16,11 +25,38 @@ class DetailViewController: NSViewController {
             if let result = result {
                 nameField.stringValue = result.trackName
                 companyField.stringValue = result.artistName
+                descriptionField.stringValue = result.description ?? ""
+                
+                priceTextField.stringValue = result.formattedPrice ?? ""
+
+                categoryTextField.stringValue = result.genres?.first ?? ""
+                updateTextField.objectValue = result.currentVersionReleaseDate
+                versionTextField.stringValue = result.version ?? ""
+                
+                if let fileSizeBytes = result.fileSizeBytes {
+                    sizeTextField.integerValue = Int(fileSizeBytes) ?? 0
+                }
+                
+                if let languageCodesISO2A = result.languageCodesISO2A {
+                    languagesTextField.stringValue = languageCodesISO2A
+                        .compactMap { Locale.current.localizedString(forLanguageCode: $0) }
+                        .joined(separator: ", ")
+                }
+                
+
                 imageView.image = nil
                 loadImage()
             } else {
                 nameField.stringValue = ""
                 companyField.stringValue = ""
+                descriptionField.stringValue = ""
+
+                priceTextField.stringValue = ""
+                categoryTextField.stringValue = ""
+                versionTextField.stringValue = ""
+                sizeTextField.integerValue = 0
+                languagesTextField.stringValue = ""
+
                 imageView.image = nil
             }
         }

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1509A92B206A9361004559EB"
-               BuildableName = "Rez macOS.app"
+               BuildableName = "Rez Example.app"
                BlueprintName = "Rez macOS"
                ReferencedContainer = "container:Rez macOS.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1509A92B206A9361004559EB"
-            BuildableName = "Rez macOS.app"
+            BuildableName = "Rez Example.app"
             BlueprintName = "Rez macOS"
             ReferencedContainer = "container:Rez macOS.xcodeproj">
          </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1509A92B206A9361004559EB"
-            BuildableName = "Rez macOS.app"
+            BuildableName = "Rez Example.app"
             BlueprintName = "Rez macOS"
             ReferencedContainer = "container:Rez macOS.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1509A92B206A9361004559EB"
-            BuildableName = "Rez macOS.app"
+            BuildableName = "Rez Example.app"
             BlueprintName = "Rez macOS"
             ReferencedContainer = "container:Rez macOS.xcodeproj">
          </BuildableReference>

@@ -11,11 +11,11 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="Rez macOS" id="1Xt-HY-uBw">
+                            <menuItem title="Rez" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Rez macOS" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="Rez" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About Rez macOS" id="5kV-Vb-QxS">
+                                        <menuItem title="About Rez" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -29,7 +29,7 @@
                                             <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide Rez macOS" keyEquivalent="h" id="Olw-nP-bQN">
+                                        <menuItem title="Hide Rez" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
                                             </connections>
@@ -47,7 +47,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit Rez macOS" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit Rez" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -647,6 +647,12 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="eu3-7i-yIM"/>
+                                        <menuItem title="Dark Appearance" keyEquivalent="d" id="M7V-Jy-Ndn">
+                                            <connections>
+                                                <binding destination="3mq-bd-Mdx" name="value" keyPath="values.DarkAppearance" id="fHq-WS-Zyh"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="pjI-wC-Tx1"/>
                                         <menuItem title="Bring All to Front" id="LE2-aR-0XJ">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
@@ -660,7 +666,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="Rez macOS Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="Rez Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
@@ -674,16 +680,17 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Rez_macOS" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Rez_Example" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <userDefaultsController representsSharedInstance="YES" id="3mq-bd-Mdx"/>
             </objects>
-            <point key="canvasLocation" x="43" y="-253"/>
+            <point key="canvasLocation" x="-190" y="-538"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" customClass="WindowController" customModule="Rez_macOS" customModuleProvider="target" sceneMemberID="viewController">
+                <windowController id="B8D-0N-5wS" customClass="WindowController" customModule="Rez_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -764,7 +771,7 @@
                 </splitViewController>
                 <customObject id="lFI-6K-ppe" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="625" y="219"/>
+            <point key="canvasLocation" x="375" y="221"/>
         </scene>
         <!--SearchResultsViewController-->
         <scene sceneID="GEK-ba-huS">
@@ -772,7 +779,7 @@
                 <controllerPlaceholder storyboardName="SearchResultsViewController" id="cfq-Dc-8OV" sceneMemberID="viewController"/>
                 <customObject id="B3p-IN-YWV" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1187" y="47"/>
+            <point key="canvasLocation" x="822" y="142"/>
         </scene>
         <!--DetailViewController-->
         <scene sceneID="UU4-07-7Sn">
@@ -780,7 +787,7 @@
                 <controllerPlaceholder storyboardName="DetailViewController" id="iIf-n7-Ayu" sceneMemberID="viewController"/>
                 <customObject id="vbS-sj-uak" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1263" y="467"/>
+            <point key="canvasLocation" x="796" y="301"/>
         </scene>
     </scenes>
 </document>
