@@ -77,7 +77,7 @@ class WindowController: NSWindowController {
         
         guard let resource = SearchResultsContainer.search(sender.stringValue) else { return }
         
-        URLSession.shared.load(resource: resource) { [weak self] result in
+        ResourceLoader().load(resource: resource) { [weak self] result in
             DispatchQueue.main.async {
                 
                 self?.results = []

@@ -7,7 +7,15 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var companyLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var updateLabel: UILabel!
+    @IBOutlet weak var versionLabel: UILabel!
+    @IBOutlet weak var sizeLabel: UILabel!
+    @IBOutlet weak var languagesLabel: UILabel!
     
+    @IBOutlet weak var descriptionLabel: UILabel!
+
     var task: URLSessionDataTask?
     
     var result: SearchResult? {
@@ -15,6 +23,29 @@ class DetailViewController: UIViewController {
             if let result = result {
                 nameLabel.text = result.trackName
                 companyLabel.text = result.artistName
+                
+                descriptionLabel.text = result.description ?? ""
+                
+//                priceLabel.text = result.formattedPrice ?? ""
+//
+//                categoryLabel.text = result.genres?.first ?? ""
+//
+//                let dateFomatter = DateFormatter()
+//                updateLabel.text = dateFomatter.string(from: result.currentVersionReleaseDate ?? Date(timeIntervalSince1970: 0))
+//
+//                versionLabel.text = result.version ?? ""
+//
+//                if let fileSizeBytes = result.fileSizeBytes {
+//                    let sizeFormatter = NumberFormatter()
+//                    sizeLabel.text = sizeFormatter.string(from: NSNumber(value: Int(fileSizeBytes) ?? 0))
+//                }
+//
+//                if let languageCodesISO2A = result.languageCodesISO2A {
+//                    languagesLabel.text = languageCodesISO2A
+//                        .compactMap { Locale.current.localizedString(forLanguageCode: $0) }
+//                        .joined(separator: ", ")
+//                }
+
                 imageView.image = nil
                 loadImage()
             } else {
@@ -51,7 +82,7 @@ class DetailViewController: UIViewController {
         
         let resource = Resource<UIImage>(url: artworkURL)
         
-        task = URLSession.shared.dataTask(resource: resource) { [weak self] result in
+        task = ResourceLoader().dataTask(resource: resource) { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
                 case let .success(image):

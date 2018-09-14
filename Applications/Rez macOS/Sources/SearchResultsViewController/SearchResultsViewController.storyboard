@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="gKm-dy-0Fr">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="gKm-dy-0Fr">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14313.13.2"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Search Results View Controller-->
         <scene sceneID="RBr-6c-a82">
             <objects>
-                <viewController id="gKm-dy-0Fr" customClass="SearchResultsViewController" customModule="Rez_macOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gKm-dy-0Fr" customClass="SearchResultsViewController" customModule="Rez_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Heb-6t-wFx">
                         <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -26,7 +27,7 @@
                                             <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn identifier="" width="297" minWidth="40" maxWidth="1000" id="EXG-Qo-7et">
+                                                <tableColumn width="297" minWidth="40" maxWidth="1000" id="EXG-Qo-7et">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -39,7 +40,7 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView identifier="SearchResultsCellView" id="MLK-29-cez" customClass="SearchResultsCellView" customModule="Rez_macOS" customModuleProvider="target">
+                                                        <tableCellView identifier="SearchResultsCellView" id="MLK-29-cez" customClass="SearchResultsCellView" customModule="Rez_Example" customModuleProvider="target">
                                                             <rect key="frame" x="1" y="1" width="297" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
@@ -69,7 +70,8 @@
                                     <nil key="backgroundColor"/>
                                 </clipView>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="Mc4-4M-VLL"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="MUe-Lm-pmB"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="Mc4-4M-VLL"/>
                                 </constraints>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="LwL-hV-FRC">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>

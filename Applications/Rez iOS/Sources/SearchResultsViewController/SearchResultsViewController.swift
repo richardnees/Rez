@@ -28,8 +28,8 @@ class SearchResultsViewController: UITableViewController {
         
 
         guard let resource = SearchResultsContainer.search(query) else { return }
-        
-        task = URLSession.shared.dataTask(resource: resource) { [weak self] result in
+                
+        task = ResourceLoader().dataTask(resource: resource) { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
                 case let .success(container):

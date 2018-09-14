@@ -1,14 +1,18 @@
 import Foundation
 
-
-extension URLSession: ResourceLoading {
+public struct ResourceLoader: ResourceLoading {
+    public var session: URLSession
+    
+    public init(session: URLSession = URLSession.shared) {
+        self.session = session
+    }
     
     public static var httpErrorCodes: [Int] = {
         var httpErrorCodes: [Int] = []
         
         httpErrorCodes.append(contentsOf: Array(0...99))
         httpErrorCodes.append(contentsOf: Array(400...600))
-
+        
         return httpErrorCodes
     }()
     
@@ -20,9 +24,9 @@ extension URLSession: ResourceLoading {
     public func dataTask<A>(resource: Resource<A>, completion: @escaping (Result<A>) -> Void) -> URLSessionDataTask {
         var request = URLRequest(url: resource.url)
         request.allHTTPHeaderFields = resource.allHTTPHeaderFields
-
+        
         let completionHandler = dataTaskCompletionHandler(for: resource, completion: completion)
-        return dataTask(with: request, completionHandler: completionHandler)
+        return session.dataTask(with: request, completionHandler: completionHandler)
     }
     
     public func dataTaskCompletionHandler<A>(for resource: Resource<A>, completion: @escaping (Result<A>) -> Void) -> (Data?, URLResponse?, Error?) -> Void {
@@ -30,7 +34,7 @@ extension URLSession: ResourceLoading {
             
             if
                 let response = response as? HTTPURLResponse,
-                URLSession.httpErrorCodes.contains(where: { $0 == response.statusCode }) {
+                ResourceLoader.httpErrorCodes.contains(where: { $0 == response.statusCode }) {
                 completion(Result.failure(HTTPStatusError.httpError(code: response.statusCode, url: resource.url)))
                 return
             }
@@ -57,4 +61,5 @@ extension URLSession: ResourceLoading {
             }
         }
     }
+
 }

@@ -3,6 +3,9 @@ import Foundation
 /// Protocol to ensure conformance.
 public protocol ResourceLoading {
 
+    /// The URLSession to use.
+    var session: URLSession { get set }
+    
     /// Creates a `URLSessionDataTask` instance from a generic `Resource` and resumes it immediately.
     ///
     /// - parameter resource:   Generic resource

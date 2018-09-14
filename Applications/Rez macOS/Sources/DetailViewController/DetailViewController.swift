@@ -32,17 +32,17 @@ class DetailViewController: NSViewController {
                 categoryTextField.stringValue = result.genres?.first ?? ""
                 updateTextField.objectValue = result.currentVersionReleaseDate
                 versionTextField.stringValue = result.version ?? ""
-                
+
                 if let fileSizeBytes = result.fileSizeBytes {
                     sizeTextField.integerValue = Int(fileSizeBytes) ?? 0
                 }
-                
+
                 if let languageCodesISO2A = result.languageCodesISO2A {
                     languagesTextField.stringValue = languageCodesISO2A
                         .compactMap { Locale.current.localizedString(forLanguageCode: $0) }
                         .joined(separator: ", ")
                 }
-                
+
 
                 imageView.image = nil
                 loadImage()
@@ -76,7 +76,7 @@ class DetailViewController: NSViewController {
         
         let resource = Resource<NSImage>(url: artworkURL)
         
-        task = URLSession.shared.dataTask(resource: resource) { [weak self] result in
+        task = ResourceLoader().dataTask(resource: resource) { [weak self] result in
             DispatchQueue.main.async {
                 
                 self?.imageLoadingIndicator.stopAnimation(nil)

@@ -9,7 +9,7 @@ PlaygroundPage.current.needsIndefiniteExecution = true
 
 let resource = SearchResultsContainer.search("apple")!
 
-URLSession.shared.load(resource: resource) { result in
+ResourceLoader().load(resource: resource) { result in
     switch result {
     case let .success(container):
         

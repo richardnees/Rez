@@ -3,8 +3,14 @@ import XCTest
 
 class ResourceTests: XCTestCase {
 
+    var resourceLoader: ResourceLoader!
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        let configuration = URLSessionConfiguration.ephemeral
+        configuration.protocolClasses = [TestURLProtocol.self]
+        let urlSession = URLSession(configuration: configuration)
+        
+        resourceLoader = ResourceLoader(session: urlSession)
     }
 
     override func tearDown() {
@@ -26,7 +32,7 @@ class ResourceTests: XCTestCase {
         
         let exp = self.expectation(description: "test_simpleResource")
         
-        URLSession.shared.load(resource: resource) { result in
+        resourceLoader.load(resource: resource) { result in
             switch result {
             case let .success(testResource):
                 XCTAssertEqual(testResource.name, "A simple test resource name\n")
@@ -45,7 +51,7 @@ class ResourceTests: XCTestCase {
         
         let exp = self.expectation(description: "test_JSONResource")
         
-        URLSession.shared.load(resource: resource) { result in
+        resourceLoader.load(resource: resource) { result in
             switch result {
             case let .success(testResource):
                 XCTAssertEqual(testResource.name, "Rez")
@@ -64,7 +70,7 @@ class ResourceTests: XCTestCase {
         
         let exp = self.expectation(description: "test_JSONResourceFailed")
         
-        URLSession.shared.load(resource: resource) { result in
+        resourceLoader.load(resource: resource) { result in
             switch result {
             case .success(_):
                 XCTAssertFalse(true, "Test is broken. We should get a failure here.")
@@ -83,7 +89,7 @@ class ResourceTests: XCTestCase {
         
         let exp = self.expectation(description: "test_imageResource")
         
-        URLSession.shared.load(resource: resource) { result in
+        resourceLoader.load(resource: resource) { result in
             switch result {
             case let .success(image):
                 XCTAssertNotNil(image)
@@ -102,7 +108,7 @@ class ResourceTests: XCTestCase {
         
         let exp = self.expectation(description: "test_imageResourceFail")
         
-        URLSession.shared.load(resource: resource) { result in
+        resourceLoader.load(resource: resource) { result in
             switch result {
             case .success(_):
                 XCTAssertFalse(true, "Test is broken. We should get a failure here.")
@@ -121,7 +127,7 @@ class ResourceTests: XCTestCase {
         
         let exp = self.expectation(description: "test_serverNotFound")
         
-        URLSession.shared.load(resource: resource) { result in
+        resourceLoader.load(resource: resource) { result in
             switch result {
             case .success(_):
                 XCTAssertFalse(true, "Test is broken. We should get a failure here.")
@@ -140,7 +146,7 @@ class ResourceTests: XCTestCase {
         
         let exp = self.expectation(description: "test_httpErrorStatus")
         
-        URLSession.shared.load(resource: resource) { result in
+        resourceLoader.load(resource: resource) { result in
             switch result {
             case .success(_):
                 XCTAssertFalse(true, "Test is broken. We should get a failure here.")
